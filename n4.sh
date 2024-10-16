@@ -24,7 +24,8 @@ ls -lr $(grep -lr 'ro') /dev/null | grep -v '/dev/null' | tail -n 4
 
 echo '6)'
 
-wc -m $(ls -LA1p ludicolo6/ 2>&1 | grep -v 'Permission denied' | grep '[^/]$') < /dev/null > /tmp/n4_6.txt
+wc -m $(ls -A1p ludicolo6/ 2>&1 | grep -v 'Permission denied' | grep '[^/]$') < /dev/null > /tmp/n4_6.txt
 cat /tmp/n4_6.txt
 
 cd ..
+
